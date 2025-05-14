@@ -1,5 +1,5 @@
 import React from "react";
-
+import { MdDelete } from "react-icons/md";
 const App = () => {
   return (
     <div className="bg-[#E9F0FE] h-screen flex justify-center items-center">
@@ -10,8 +10,9 @@ const App = () => {
         </div>
         <div className="bg-[#E9F0FE] h-1/8 rounded-md flex justify-between items-center px-5">
           <img src="/Vector.png" width={24} height={20} />
-
-          <img src="/Frame 2.png" width={164} height={20} />
+          <button className="flex items-center ">
+            <span> No Selected File -</span> <MdDelete />
+          </button>
         </div>
       </div>
     </div>
